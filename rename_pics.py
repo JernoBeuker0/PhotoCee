@@ -67,13 +67,24 @@ def rename_photos_by_names(
 
         photo.rename(new_path)
 
+def check_duplicates(name_list: list[str]):
+    """Checks for duplicates in the namelist. If there are the conversion will not go right, so it gives an error"""
+    seen = set()
+    for name in name_list:
+        if name in seen:
+            raise ValueError(f"Duplicate string found: '{name}', fix this, else not all photos will be renamed.")
+        seen.add(name)
+
+
 if __name__ == "__main__":
     # Load the names corresponding with the group in a dictionary and saving it.
     names = load_grouped_names(NAMES_CSV_FILE)
     save_dict(names)
     
-    # Flatten the dictionary to get a list of names and rename the photos based on that list.
+    # Flatten the dictionary to get a list of names and rename the photos based on that list. 
+    # (If there is duplicates an error is raised)
     flattened_names = [name for group in names.values() for name in group]
+    check_duplicates(flattened_names)
     rename_photos_by_names(flattened_names)
     
     print('Task succesful, jeejj:)')
