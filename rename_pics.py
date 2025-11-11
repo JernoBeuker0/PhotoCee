@@ -79,7 +79,6 @@ def check_duplicates(name_list: list[str]):
 if __name__ == "__main__":
     # Load the names corresponding with the group in a dictionary and saving it.
     names = load_grouped_names(NAMES_CSV_FILE)
-    save_dict(names)
     
     # Flatten the dictionary to get a list of names and rename the photos based on that list. 
     # (If there is duplicates an error is raised)
