@@ -5,7 +5,7 @@ from pathlib import Path
 from collections import defaultdict
 from natsort import natsorted
 
-NAMES_CSV_FILE = "Names/names.csv"  # Path to the CSV file containing names and groups
+NAMES_CSV_FILE = "Names/2526/names.csv"  # Path to the CSV file containing names and groups
 PHOTO_FOLDER = "PhotoBooth/2526"  # Path to the folder containing photos to be named
 OUTPUT_FOLDER = "Output/2526"
 ALLOWED_EXTENSIONS = [".jpg", ".jpeg", ".png"]  # Allowed photo file extensions
