@@ -1,16 +1,10 @@
-# PhotoCee
+# Coverting Raw camera files to JPG
 
-Hello welcome to the PhotoCee github!
+To run the script, it is important to change the global variables in the change_sig.py (I wanted to do arguments, but was too lazy). The only two that should be changed are the INPUT and OUTPUT folders.
 
-The initial reason for this github is to share the code for running the script to change names of people in the introweek photobooth.
+After this is filled in properly, run:
+```python
+python rename_pics.py
+```
 
-## Running the code
-### Setting up the environment
-To run the code, it is nice to set up a venv and install the requirements. So in a venv, do:
- - pip install requirements.txt
-
-### Choose funcionality
-At the time of writing, the introweek photobooth is the only functionality that is implemented, so do:
- - git checkout Introweek_Photobooth
-
-Further description on how to run the code is put there.
+After running, the original files are still there and the new ones are in the output folder.
