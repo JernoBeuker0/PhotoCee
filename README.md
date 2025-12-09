@@ -6,11 +6,15 @@ The initial reason for this github is to share the code for running the script t
 
 ## Running the code
 ### Setting up the environment
-To run the code, it is nice to set up a venv and install the requirements. So in a venv, do:
- - pip install requirements.txt
+To run the code, install the dependencies in a venv:
+```bash
+pip install requirements.txt
+```
 
 ### Choose funcionality
-At the time of writing, the introweek photobooth is the only functionality that is implemented, so do:
- - git checkout Introweek_Photobooth
+For the functionalities that this repository has to offer, just check the branch names and it should be quite self explanatory:
+```bash
+git branch -a
+```
 
-Further description on how to run the code is put there.
+Just checkout that branch for further instructions in the readme.
