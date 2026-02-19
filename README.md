@@ -1,4 +1,4 @@
-# Coverting Raw camera files to JPG
+# Converting Raw camera files to JPG
 
 Before trying to run, make sure that you have you venv activated.
 
