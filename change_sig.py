@@ -2,15 +2,14 @@ import os
 import rawpy
 from PIL import Image
 
-INPUT_FOLDER = "Input/Chess Tournament"
-OUTPUT_FOLDER = "Output/Chess"
+INPUT_FOLDER = "Input/Try"
+OUTPUT_FOLDER = "Output/Try"
 
 
 def single_cr2_to_jpg(input_path, output_path, quality=95):
     with rawpy.imread(input_path) as raw:
         rgb = raw.postprocess(
             use_camera_wb=True,
-            no_auto_bright=True,
             output_bps=8,
         )
 
