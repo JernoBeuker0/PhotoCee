@@ -1,3 +1,7 @@
 /PhotoBooth/
+
 /Output/*
+!Output/.gitkeep
+
 /Input/*
+!Input/.gitkeep
