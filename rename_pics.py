@@ -5,9 +5,9 @@ from pathlib import Path
 from collections import defaultdict
 from natsort import natsorted
 
-NAMES_CSV_FILE = "Names/2526/names.csv"  # Path to the CSV file containing names and groups
-PHOTO_FOLDER = "PhotoBooth/2526"  # Path to the folder containing photos to be named
-OUTPUT_FOLDER = "Output/2526"
+NAMES_CSV_FILE = "names.csv"  # Path to the CSV file containing names and groups
+PHOTO_FOLDER = "Input"  # Path to the folder containing photos to be named
+OUTPUT_FOLDER = "Output"
 ALLOWED_EXTENSIONS = [".jpg", ".jpeg", ".png"]  # Allowed photo file extensions
 
 def load_grouped_names(filename: str) -> dict[str, list[str]]:
